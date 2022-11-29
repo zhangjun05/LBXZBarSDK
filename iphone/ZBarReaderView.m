@@ -296,7 +296,8 @@ static inline CGFloat rotationForInterfaceOrientation (int orient)
         effectiveCrop = zoomCrop;
 
     // size preview to match image in view coordinates
-    CGFloat viewScale = 1 / imageScale;
+//    CGFloat viewScale = 1 / imageScale;
+    CGFloat viewScale = 1;
     if(imageSize.width && imageSize.height)
         psize = CGSizeMake(imageSize.width * viewScale,
                            imageSize.height * viewScale);
